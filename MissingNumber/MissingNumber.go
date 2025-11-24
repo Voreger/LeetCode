@@ -1,7 +1,9 @@
 package MissingNumber
 
 func MissingNumber(nums []int) int {
-	n := len(nums)
-	sum := nums[n-1] / 2 * (n + 1)
+	sum := len(nums) * (len(nums) + 1) / 2
+	for _, n := range nums {
+		sum -= n
+	}
 	return sum
 }

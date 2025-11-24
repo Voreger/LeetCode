@@ -1,11 +1,12 @@
 package main
 
 import (
-	"LeetCode/MissingNumber"
+	"LeetCode/AddBinary"
 	"fmt"
 )
 
 func main() {
-	val := []int{0, 1, 2, 3, 4, 5}
-	fmt.Println(MissingNumber.MissingNumber(val))
+	val := "10"
+	val2 := "11"
+	fmt.Println(AddBinary.AddBinary(val, val2))
 }
