@@ -1,12 +1,13 @@
 package main
 
 import (
-	"LeetCode/AddBinary"
-	"fmt"
+	"LeetCode/Easy/MergeSortedArray"
 )
 
 func main() {
-	val := "10"
-	val2 := "11"
-	fmt.Println(AddBinary.AddBinary(val, val2))
+	val := []int{0}
+	m := 0
+	val2 := []int{1}
+	n := 1
+	MergeSortedArray.Merge(val, m, val2, n)
 }
