@@ -1,7 +1,5 @@
 package SearchInsertPosition
 
-import "fmt"
-
 func SearchInsert(nums []int, target int) int {
 	left := 0
 	right := len(nums) - 1
@@ -17,7 +15,6 @@ func SearchInsert(nums []int, target int) int {
 		} else {
 			return mid
 		}
-		fmt.Println(left, right, mid)
 		if left > right && nums[mid] > target {
 			return mid
 		} else if left > right && nums[mid] < target {

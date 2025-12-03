@@ -10,5 +10,6 @@ func SmallestRepunitDivByK(k int) int {
 		i = (i%k)*10 + 1
 		length++
 	}
+
 	return length
 }
